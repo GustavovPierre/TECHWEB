@@ -9,4 +9,10 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+   <servlet-name>adicionaNome</servlet-name>
+  <servlet-class>br.edu.insper.adicionaNome</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>adicionaNome</servlet-name>
+  <url-pattern>/teste</url-pattern>
 </web-app>
