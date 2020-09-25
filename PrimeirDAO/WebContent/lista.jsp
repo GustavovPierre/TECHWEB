@@ -11,7 +11,8 @@
 </head>
 <body>
 <h1>Sua lista de tarefas de hoje:</h1>
-<h3>Não esqueça de realizar todas até o final de hoje!!!!!</h3>
+
+<h5>Não esqueça de realizar todas até o final do dia!</h5>
 <table border='1'>
 
 <c:forEach var="pessoas" items="${pessoas}"> 
@@ -23,19 +24,20 @@
 <form action='remove' method='post'>
 <input type='hidden' name='id' value='${pessoas.id}'>
 <input type='submit' value='remover'>
-
 </form>
+</td>
+
+<td>
 <form action='atualiza' method='get'>
 <input type='hidden' name='id' value='${pessoas.id}'>
-<input type='hidden' name='nome' value='${pessoas.task}'>
+<input type='hidden' name='task' value='${pessoas.task}'>
 <input type='submit' value='atualizar'>
-
 </form>
 </td>
 </tr>
 
 </c:forEach>
-
 </table>
+<a href="Cria">Criar nova tarefa </a>
 </body>
 </html>

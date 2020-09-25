@@ -48,7 +48,7 @@ public class atualiza extends HttpServlet {
 		
 		pessoa.setId(Integer.valueOf(request.getParameter("id")));
 		
-		pessoa.setTask(request.getParameter("tasks"));
+		pessoa.setTask(request.getParameter("task"));
 		
 		dao.atualiza(pessoa);
 		

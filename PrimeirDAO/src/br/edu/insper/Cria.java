@@ -50,6 +50,8 @@ public class Cria extends HttpServlet {
 		dao.adiciona(pessoa);
 		dao.close();
 		
+		response.sendRedirect("Lista");
+		
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
